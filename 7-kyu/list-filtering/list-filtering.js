@@ -1,9 +1,9 @@
 function filter_list(l) {
-  // Return a new array with the strings filtered out
   let int = []
-  for (let i of l) {
-    if (typeof i == "number") {
-      int.push(i)
+  // inisialisasi variable untuk menampung array
+  for (let x of l) {
+    if (typeof x === "number") {
+      int.push(x)
     }
   }
   return int;
