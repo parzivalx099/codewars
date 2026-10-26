@@ -1,12 +1,19 @@
 function filter_list(l) {
+  
+  // 1. init variabel penampung
+  
   let int = []
-  // inisialisasi variable untuk menampung array
-  for (let x of l) {
-  // iterasi array l, current item disimpan pada variabel x
-    if (typeof x === "number") {
-      // jika tipe data variabel x adalah number
-      int.push(x)
-      // push value x ke array int
+  
+  // 2. iterasi array dari argumen
+  
+  for (let i of l) {
+    
+  // 3. filter array agar bertipe "number" only
+    
+    if (typeof i === "number") {
+      
+  // 4. masukkan item yang sudah difilter ke array penampung "int"
+      int.push(i)
     }
   }
   return int;
